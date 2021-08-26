@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
     <title>JobsNET</title>
 </head>
 <body>
@@ -22,7 +23,6 @@
         <div class="inputBox">
             <input type="text" class="inputUser" required>
             <label for="cargo">Cargo Pretendido </label>
-           
         </div>
         <div class="inputBox">
             <input type="date" class="inputUser" >
@@ -30,8 +30,6 @@
         </div>
      </div>
      <div class="row">
-       
-       
         <div  class="inputBox">
             <select class="inputUser"  name="sexo" id="sexo">
                 <option selected disabled value="inicial"></option>
@@ -52,80 +50,69 @@
             <label for="estadoCivil">Estado Civil</label>
         </div> 
         <div class="inputBox">
-            <input type="text" >
+            <input type="text" id="cpf" >
             <label for="cpf">CPF*</label>
         </div>    
-       
      </div>
      <div class="row">
         <div class="inputBox">
-            <input type="text" class="inputUser">
+            <input type="text" id="identidade" class="inputUser">
             <label for="identidade">Identidade*</label>
         </div>   
         <div class="inputBox">
-            <input type="text" class="inputUser">    
-            <label for="bairro">Cep *</label> 
+            <input type="text" id="cep" class="inputUser" required>    
+            <label for="bairro">CEP*</label> 
         </div>  
-       
         <div class="inputBox">    
-            <input type="text" class="inputUser">    
+            <input type="text" id="cidade" class="inputUser"required>    
             <label for="cidade">Cidade *</label>
-        </div>       
-       
-      
-     </div>
-       
-       
+        </div>      
+     </div>       
      <div class="row">
         <div class="inputBox">
-            <input type="text" class="inputUser" placeholder="ex Nome da Rua,56, Bloco 2, AP 301">
+            <input type="text" class="inputUser" id="endereco" placeholder="ex Nome da Rua,56, Bloco 2, AP 301">
             <label for="endereco">Endereço*</label> 
         </div>   
         <div class="inputBox">
-            <input type="text" class="inputUser">    
+            <input type="text" id="bairro" class="inputUser">    
             <label for="bairro">Bairro *</label>
         </div>
         <div class="inputBox">
-            <input type="tel" class="inputUser">    
+            <input type="tel" id="tel" class="inputUser">    
             <label for="tel">Celular*</label> 
         </div>    
-     
-     </div>
-
-     <div class="row">     
-                <div class="inputBox">
-                    <input type="email" class="inputUser">    
-                    <label for="email">Email*</label>
-                </div> 
-      
-         
-                <div class="inputBox">
-                <select  name="habilitacao" id="">
-                    <option selected disabled  value=""></option>
-                    <option value="nao">Não</option>
-                    <option value="sim">Habilitação - A</option>
-                    <option value="sim">Habilitação - B </option>
-                    <option value="sim">Habilitação - A/B</option>
-                </select>
-                <label for="habilitacao">Habilitação</label>
+    </div>
+    <div class="row">     
+        <div class="inputBox">
+            <input type="email" id="email" class="inputUser">    
+            <label for="email">Email*</label>
+       </div> 
+        <div class="inputBox">
+            <select  name="habilitacao" id="habilitacao">
+                <option selected disabled  value=""></option>
+                <option value="nao">Não</option>
+                <option value="sim">Habilitação - A</option>
+                <option value="sim">Habilitação - B </option>
+                <option value="sim">Habilitação - A/B</option>
+            </select>
+            <label for="habilitacao">Habilitação</label>
             </div> 
-            <div class="inputBox">
-                
-                <select class="inputUser" name="veiculo" id="veiculo">
-                    <option selected disabled  value=""></option>
-                    <option value="sim">Sim</option>
-                    <option value="nao">Não</option>
-                </select>
-                <label for="veiculo">Possui Veículo?</label>
-            </div>
+        <div class="inputBox">
+            <select class="inputUser" name="veiculo" id="veiculo">
+                <option selected disabled  value=""></option>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+            <label for="veiculo">Possui Veículo?</label>
         </div>
-         <div class="row">
-             <button>Enviar</button>
-         </div>
-     
+        </div>
+    <div class="row">
+        <button type="button">Enviar</button>
+    </div>
     </main>
     <footer>
       Projeto feito por Glenda Borges &#169 2021
     </footer>
+
 </body>
 </html>
