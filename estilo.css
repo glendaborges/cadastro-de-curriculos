@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+   
+   
+
+}
+
+.container {
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%; 
+    padding: 20px;  
+    gap: 10px;
+    background-color: #07324b;
+    box-shadow: 1px 1px 10px 1px black;
+    border-radius: 10px;
+   
+  
+}
+
+.title {
+    font-size: 25px;
+    text-align: center;
+    color: #dae2e7;
+    user-select: none;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+   
+}
+
+.inputBox {
+    display: flex ;
+    flex-direction: column-reverse;
+    height: 50px;
+    
+    
+}
+
+.inputBox label {
+    /* position: relative; */
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    color:#44a1d8;
+   
+}
+
+.inputBox input {
+    width: 90%;
+    color: rgb(245, 245, 248);
+    background-color: #0d4668;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 20px;
+    padding: 0 10px;
+    transition: .5s;
+}
+
+.inputBox select {
+    width: 90%;
+    background-color:  #0d4668;
+    color: blanchedalmond;
+    border-bottom: 1px solid white;
+    height: 25px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    
+
+}
+
+
+
+.container button {
+    justify-self: center;
+    width: 20%;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #0d4668;
+    color: rgb(243, 225, 225);
+}
+
