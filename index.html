@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +7,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="style.css">
     <title>JobsNET</title>
 </head>
 <body>
     <img src="img/ezgif.com-gif-maker (4).gif" width="300px">
     <main class="container">
-     <h1 class="title">Cadastro de Curriculo</h1>
+     <h1 class="title">Cadastro de Currículo</h1>
      <div class="row">
         <div class="inputBox">
             <input type="text" class="inputUser" required>
@@ -22,13 +22,15 @@
         <div class="inputBox">
             <input type="text" class="inputUser" required>
             <label for="cargo">Cargo Pretendido </label>
+           
         </div>
-     </div>
-     <div class="row">
         <div class="inputBox">
             <input type="date" class="inputUser" >
             <label for="anoNascimento">Data de Nascimento</label>
         </div>
+     </div>
+     <div class="row">
+       
        
         <div  class="inputBox">
             <select class="inputUser"  name="sexo" id="sexo">
@@ -48,51 +50,56 @@
                 <option value="viuvo">viuvo(a)</option>
             </select>
             <label for="estadoCivil">Estado Civil</label>
-        </div>  
+        </div> 
+        <div class="inputBox">
+            <input type="text" >
+            <label for="cpf">CPF*</label>
+        </div>    
+       
      </div>
      <div class="row">
         <div class="inputBox">
+            <input type="text" class="inputUser">
+            <label for="identidade">Identidade*</label>
+        </div>   
+        <div class="inputBox">
             <input type="text" class="inputUser">    
             <label for="bairro">Cep *</label> 
-        </div> 
+        </div>  
+       
         <div class="inputBox">    
             <input type="text" class="inputUser">    
             <label for="cidade">Cidade *</label>
         </div>       
+       
+      
+     </div>
+       
+       
+     <div class="row">
         <div class="inputBox">
             <input type="text" class="inputUser" placeholder="ex Nome da Rua,56, Bloco 2, AP 301">
             <label for="endereco">Endereço*</label> 
-        </div>    
+        </div>   
         <div class="inputBox">
             <input type="text" class="inputUser">    
             <label for="bairro">Bairro *</label>
-        </div> 
-     </div>
-       
-       
-     <div class="row">
+        </div>
         <div class="inputBox">
             <input type="tel" class="inputUser">    
-            <label for="cidade">Celular*</label> 
+            <label for="tel">Celular*</label> 
         </div>    
-        <div class="inputBox">
-            <input type="email" class="inputUser">    
-            <label for="cidade">Email*</label>
-        </div>    
+     
      </div>
-     <div class="row">
-            <div class="inputBox">
-                <input type="text" class="inputUser">
-                <label for="identidade">Identidade*</label>
-            </div>
-    
-            <div class="inputBox">
-                <input type="text" >
-                <label for="cpf">CPF*</label>
-            </div>        
-     </div>
-     <div class="row">      
-            <div class="inputBox">
+
+     <div class="row">     
+                <div class="inputBox">
+                    <input type="email" class="inputUser">    
+                    <label for="email">Email*</label>
+                </div> 
+      
+         
+                <div class="inputBox">
                 <select  name="habilitacao" id="">
                     <option selected disabled  value=""></option>
                     <option value="nao">Não</option>
